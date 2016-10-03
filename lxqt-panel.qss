@@ -1,0 +1,120 @@
+/*
+ * Plain widget theme with small improvements (spacing, search menu, menu popup)
+*/
+
+/*
+General panel settings
+ */
+
+LXQtPanel #BackgroundWidget{
+      background: rgba(0, 0, 0, 30%);
+}
+/*
+Main Menu, menu
+*/
+QMenu,
+#MainMenu {
+   border:0
+}
+QMenu QToolButton {
+   margin-bottom:3px;
+}
+/*QMenu::item {
+   margin: 2px;
+   color:palette(text);
+   padding: 5px 35px 5px 30px;
+}
+QMenu::item:hover {
+   color:palette(highlighted-text);
+   background:palette(highlight)
+}*/
+QMenu::separator {
+   height: 1px;
+   background: palette(highlight);
+   margin:2px;
+}
+
+#MainMenu QLineEdit {
+   margin: 5px 7px 0px 7px;
+   padding: 3px;
+}
+#MainMenu {
+   qproperty-icon: url();
+}
+#MainMenu ActionView::item {
+   padding: 6px 30px 6px 3px;
+}
+
+Plugin > QToolButton,
+Plugin > QWidget > QToolButton,
+Plugin > QWidget > QToolButton > QWidget > QToolButton,
+LXQtPanelPlugin > QToolButton {
+   margin: 2px 4px;
+   padding: 2px;
+}
+
+/*
+TaskBar
+*/
+#TaskBar QToolButton QLabel{
+   text-align:left;
+}
+#TaskBar QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
+/*
+Desktopswitch
+*/
+#DesktopSwitch QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
+/*
+Spacer
+*/
+
+#Spacer {
+    background-position: center center;
+}
+
+#Spacer[type="lined"] {
+    background-image: url(/spacer-plugin/spacer-line.svg);
+}
+
+#Spacer[type="dotted"] {
+    background-image: url(/spacer-plugin/spacer-dots.svg);
+ }
+
+#Spacer[orientation="horizontal"] {
+    background-repeat: repeat-y;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#Spacer[orientation="vertical"] {
+    background-repeat: repeat-x;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+/* 
+KbIndicator 
+*/
+#KbIndicator QLabel {
+   padding: 2px;
+   border: 0px;
+   margin: 2px;
+}
+#KbIndicator QLabel:disabled {
+   color: palette(text);
+}
+#KbIndicator QLabel:enabled {
+   color: palette(highlighted-text);
+   background: palette(highlight);
+}
+/*
+
+
