@@ -33,3 +33,6 @@ Search field
    padding: 4px;
    margin: 2px;
 }
+QMenu  {
+   border:0
+}
