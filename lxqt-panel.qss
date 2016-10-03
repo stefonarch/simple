@@ -7,10 +7,10 @@ General panel settings
  */
 
 LXQtPanel #BackgroundWidget{
-      background: rgba(0, 0, 0, 30%);
+      background: palette(window);
 }
 /*
-Main Menu, menu
+Main Menu, other menus
 */
 QMenu,
 #MainMenu {
@@ -19,24 +19,16 @@ QMenu,
 QMenu QToolButton {
    margin-bottom:3px;
 }
-/*QMenu::item {
-   margin: 2px;
-   color:palette(text);
-   padding: 5px 35px 5px 30px;
-}
-QMenu::item:hover {
-   color:palette(highlighted-text);
-   background:palette(highlight)
-}*/
+
 QMenu::separator {
    height: 1px;
    background: palette(highlight);
-   margin:2px;
+   margin:3px;
 }
 
 #MainMenu QLineEdit {
-   margin: 5px 7px 0px 7px;
    padding: 3px;
+   
 }
 #MainMenu {
    qproperty-icon: url();
@@ -75,7 +67,6 @@ Desktopswitch
 /*
 Spacer
 */
-
 #Spacer {
     background-position: center center;
 }
@@ -115,6 +106,3 @@ KbIndicator
    color: palette(highlighted-text);
    background: palette(highlight);
 }
-/*
-
-

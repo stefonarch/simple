@@ -1,0 +1,31 @@
+/*
+Popup
+*/
+Notification {
+   padding: 1px;
+   margin: 0px;
+   background: palette(window);
+   border: palette(text);
+   border-radius: 3px;
+}
+/*message*/
+QLabel {
+   color:palette(text);
+}
+/*title*/
+#appLabel {
+   color:palette(highlight);
+}
+QToolButton {
+   padding:4px;
+}
+
+QToolButton:pressed {
+   background:#1899da;
+   border-radius:2px;
+}
+
+#closeButton {
+   qproperty-icon: url(lxqt-runner/close.svg);
+   qproperty-iconSize: 18px;
+}

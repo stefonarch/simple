@@ -1,0 +1,35 @@
+/*
+Panel
+ */
+#panel {
+   padding: 5px;
+   background: palette(window);
+   border: 1px solid palette(text);
+   border-radius:3px;
+}
+/*
+Buttons
+*/
+QToolButton::menu-indicator {
+   image: none;
+}
+QToolButton {
+   qproperty-iconSize: 20px;
+}
+QToolButton:hover {
+   padding: -1px;
+}
+#closeButton {
+   qproperty-icon: url(lxqt-runner/close.svg);
+}
+
+#actionButton {
+   qproperty-icon: url(lxqt-runner/down-arrow.svg);
+}
+/*
+Search field
+*/
+#commandEd {
+   padding: 4px;
+   margin: 2px;
+}
