@@ -17,7 +17,7 @@ QToolButton {
    qproperty-iconSize: 20px;
 }
 QToolButton:hover {
-   padding: -1px;
+   border:none;
 }
 #closeButton {
    qproperty-icon: url(lxqt-runner/close.svg);
